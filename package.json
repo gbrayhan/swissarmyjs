@@ -1,0 +1,22 @@
+{
+    "name": "swissarmyjs",
+    "version": "1.0.0",
+    "main": "src/index.js",
+    "license": "MIT",
+    "description": "Basic tools to work with common problems",
+    "author": "@dannegm <im@danielgarcia.me>",
+    "scripts": {
+        "lint": "npm run lint:js && npm run lint:css",
+        "lint:js": "eslint . --ext js",
+        "lint:fix": "npm run lint:js -- --fix",
+        "prettier": "prettier \"**/*.{js,json}\" --check",
+        "prettier:fix": "npm run prettier -- --write"
+    },
+    "dependencies": {
+        "eslint": "^7.14.0",
+        "eslint-config-airbnb": "^18.2.1",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-prettier": "^3.1.4",
+        "prettier": "^2.2.1"
+    }
+}
